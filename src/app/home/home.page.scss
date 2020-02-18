@@ -1,0 +1,117 @@
+ion-button{
+  font-weight: bold;
+  text-transform: none;
+  border-radius: 30px 30px 30px 30px;
+      -moz-border-radius: 30px 30px 30px 30px;
+      -webkit-border-radius: 30px 30px 30px 30px;
+}
+
+h1{font-weight: bold!important;}
+
+h2{font-weight: bold!important;}
+
+.rowCentered{
+  width: 100%;
+  text-align: center;
+}
+
+.myThumbnail{
+  width: 100%;
+  height: auto;
+}
+
+.myThumbnail .myImg{
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+}
+
+.socialBtns{
+  width: 100%;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.socialBtn{
+  height: 40px;
+  width: 40px;
+  float: right;
+  background-color: white;
+  border-radius: 100% 100% 100% 100%;
+    -moz-border-radius: 100% 100% 100% 100%;
+    -webkit-border-radius: 100% 100% 100% 100%;
+}
+
+.socialIcon{
+  height: 100%;
+  width: 100%;
+}
+
+p{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-transform: none;
+}
+
+.etiqueta{
+  font-weight: bold;
+  transform: none;
+  white-space: normal;
+}
+
+.menuMain{
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  bottom: 0px;
+  background-color: white;
+}
+
+.halfPart{
+  width: 40%;
+  float: left;
+}
+
+.halfMiddle{
+  width: 20%;
+  float: left;
+}
+
+.menuBtn{
+  width: 50%;
+  height: 60px;
+  font-size: x-small;
+  margin-left: 0px;
+  margin-right: 0px;
+  background-color: transparent;
+}
+
+.btnPlus{
+  bottom: 20px;
+  position: relative;
+  width: 90%;
+  height: 60px;
+  font-size: x-small;
+  background-color: transparent;
+}
+
+.menuLabel{
+  width: 100%;
+  float: left;
+}
+
+.menuIcon{
+  height: 20px;
+  width: 20px;
+}
+
+.iconPlus{
+  height: 40px;
+  width: 40px;
+  padding: 5px;
+  background-color: #3171e0;
+  border-radius: 100% 100% 100% 100%;
+    -moz-border-radius: 100% 100% 100% 100%;
+    -webkit-border-radius: 100% 100% 100% 100%;
+}

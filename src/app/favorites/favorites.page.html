@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Favoritos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" padding>
+  <ion-grid>
+    <ion-row style="text-align: center; border-bottom-color: grey; border-bottom-style: solid; border-bottom-width: 1px;">
+      <ion-col style="border-right-color: grey; border-right-style: solid; border-right-width: 1px;">
+        <ion-text><ion-icon name="swap-vertical-outline"></ion-icon> Ordenar</ion-text>
+      </ion-col>
+      <ion-col>
+        <ion-text><ion-icon name="funnel-outline"></ion-icon> Filtro</ion-text>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-list *ngFor="let item of items, let i = index">
+    <ion-item>
+      <img src="assets/orgs/persona-{{ i + 1}}.jpg">
+      <div class="socialBtns">
+        <button class="socialBtn"><ion-icon class="socialIcon" name="heart-outline"></ion-icon></button>
+      </div>
+      
+      <ion-label>
+        <p>Jueves, 2 de octubre</p>
+        <p style="font-weight: bold;">Evento marcado como favorito</p>
+        <p><ion-icon name="location-outline"></ion-icon> El Andén 56, Burgos (Burgos)</p>
+      </ion-label>
+    </ion-item>
+
+  </ion-list>
+
+</ion-content>

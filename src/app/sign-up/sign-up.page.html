@@ -1,0 +1,59 @@
+<ion-content [fullscreen]="true" padding>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-thumbnail item-left>
+          <ion-img src="assets/img/logo.jpg"></ion-img>
+        </ion-thumbnail>
+      </ion-col>
+    </ion-row>
+
+    <ion-row><ion-col><h1>Crear nueva cuenta</h1></ion-col></ion-row>
+
+    <ion-row><ion-col><h4>Disfruta de los mejores eventos en tu zona</h4></ion-col></ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-input padding name="user" placeholder="Nombre de usuario" ngModel required></ion-input>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-input padding name="mail" type="email" placeholder="Correo electrónico" ngModel required></ion-input>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-input padding name="password" type="password" placeholder="Contraseña" ngModel required></ion-input>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-input padding name="phone"  placeholder="Número de teléfono" ngModel required></ion-input>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+          <ion-checkbox color="success"></ion-checkbox>
+          <ion-text>Acepto los <a>Términos y Condiciones</a></ion-text>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-button style="padding-right: 10%; padding-left: 10%;" routerLink="/home" type="submit" expand="block">Registrarme</ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="footerBottom">
+      <ion-col>
+          <ion-text>¿Ya tienes cuenta? <a routerLink="/log-in">Conéctate</a></ion-text>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+</ion-content>

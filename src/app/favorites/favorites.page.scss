@@ -1,0 +1,31 @@
+img{
+    width: 100px;
+    height: 136px;
+    border-radius: 10px 10px 10px 10px;
+      -moz-border-radius: 10px 10px 10px 10px;
+      -webkit-border-radius: 10px 10px 10px 10px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+.socialBtns{
+  width: 100px;
+  position: absolute;
+  top: 5px;
+}
+
+.socialBtn{
+  height: 30px;
+  width: 30px;
+  float: right;
+  margin-right: 5px;
+  background-color: white;
+  border-radius: 100% 100% 100% 100%;
+    -moz-border-radius: 100% 100% 100% 100%;
+    -webkit-border-radius: 100% 100% 100% 100%;
+}
+
+.socialIcon{
+  height: 100%;
+  width: 100%;
+}

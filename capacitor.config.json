@@ -1,0 +1,8 @@
+{
+  "appId": "io.ionic.starter",
+  "appName": "24PLANS",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "cordova": {}
+}

@@ -1,0 +1,92 @@
+.myThumbnail{
+    width: 100%;
+    height: auto;
+}
+  
+.myThumbnail .myImg{
+    width: auto;
+    height: auto;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.optionsBar{
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    z-index: 2;
+}
+  
+.optionsBtn{
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    background-color: white;
+    border-radius: 100% 100% 100% 100%;
+      -moz-border-radius: 100% 100% 100% 100%;
+      -webkit-border-radius: 100% 100% 100% 100%;
+}
+  
+.optionsIcon{
+    height: 100%;
+    width: 100%;
+}
+
+.paginationBar{
+    width: 100%;
+    height: 10px;
+    position: absolute;
+    top: 210px;
+    z-index: 1;
+}
+  
+.paginationBtn{
+    height: 10px;
+    width: 2px;
+    position: relative;
+    float: left;
+    margin-left: 5px;
+    background-color: white;
+    border-radius: 100% 100% 100% 100%;
+      -moz-border-radius: 100% 100% 100% 100%;
+      -webkit-border-radius: 100% 100% 100% 100%;
+}
+
+.detailsEvent{
+    position: absolute;
+    top: 230px;
+    bottom: 0px;
+    z-index: 1;
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.socialBtns{
+    width: 100%;
+    position: relative;
+    bottom: 45px;
+  }
+  
+.socialBtn{
+    height: 40px;
+    width: 40px;
+    float: right;
+    background-color: white;
+    border-radius: 100% 100% 100% 100%;
+      -moz-border-radius: 100% 100% 100% 100%;
+      -webkit-border-radius: 100% 100% 100% 100%;
+}
+  
+.socialIcon{
+    height: 100%;
+    width: 100%;
+}

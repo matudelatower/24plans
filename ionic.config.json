@@ -1,0 +1,8 @@
+{
+  "name": "24PLANS",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}

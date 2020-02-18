@@ -1,0 +1,154 @@
+<ion-content [fullscreen]="true" padding>
+  <ion-grid>
+
+    <ion-row>
+      <ion-col>
+          <ion-label routerLink="/home">Cancelar</ion-label>
+      </ion-col>
+    </ion-row>
+
+    <ion-row><ion-col><h1>Detalles del evento</h1></ion-col></ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-text>
+          <ion-label>Categorías</ion-label>
+          <ion-select multiple="true" placeholder="Seleccione categorías" required>
+            <ion-select-option *ngFor="let item of categorias, let i = index" [value]="i">{{item}}</ion-select-option>
+          </ion-select>
+        </ion-text>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-text>
+          <ion-label>Nombre</ion-label>
+          <ion-input padding name="name" placeholder="Introduce el nombre del evento" required></ion-input>
+        </ion-text>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-text>
+          <ion-label>Dirección</ion-label>
+          <ion-input padding name="address" placeholder="Introduce la dirección del evento" required></ion-input>
+        </ion-text>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-label>Fecha de inicio</ion-label>
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+              <ion-icon style="float: left; margin-top: 10px;" name="calendar-outline"></ion-icon>
+              <ion-datetime placeholder="Día" displayFormat="MMM DD" display-timezone="utc"></ion-datetime>
+            </ion-col>
+            <ion-col>
+              <ion-icon style="float: left; margin-top: 10px;" name="time-outline"></ion-icon>
+              <ion-datetime placeholder="Hora" displayFormat="HH:mm A" display-timezone="utc"></ion-datetime>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-label>Fecha de finalización</ion-label>
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+              <ion-icon style="float: left; margin-top: 10px;" name="calendar-outline"></ion-icon>
+              <ion-datetime placeholder="Día" displayFormat="MMM DD" display-timezone="utc"></ion-datetime>
+            </ion-col>
+            <ion-col>
+              <ion-icon style="float: left; margin-top: 10px;" name="time-outline"></ion-icon>
+              <ion-datetime placeholder="Hora" displayFormat="HH:mm A" display-timezone="utc"></ion-datetime>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-text>
+          <ion-label>Imágenes</ion-label>
+          <h2>Subir imágenes relacioandas</h2>
+          <div class="gallery-images">
+            
+            <ion-thumbnail class="gallery-img"  *ngFor="let item of fotos, let i = index">
+              <div class="deleteBar">
+                <button class="deleteBtn"><ion-icon class="deleteIcon" name="close-outline"></ion-icon></button>
+              </div>
+              <ion-img src="assets/lugs/lugar-{{i+1}}.jpg"></ion-img>
+              <div class="principalBar">
+                <button class="principalBtn">Principal</button>
+              </div>
+            </ion-thumbnail>
+
+            <div class="btn-add-img">
+              <ion-icon class="icon-add-img" name="camera-outline"></ion-icon>
+              <p class="label-add-img">Añadir</p>
+            </div>
+          </div>
+        </ion-text>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-text>
+          <ion-label>Pulsa en una foto para establecerla como principal</ion-label>
+        </ion-text>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-text>
+          <ion-label>Descripción</ion-label>
+          <ion-textarea padding name="description" placeholder="Describe tu evento" required></ion-textarea>
+        </ion-text>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-radio-group value="0">
+          <ion-list-header>
+            <ion-label>Entrada</ion-label>
+          </ion-list-header>
+          <ion-item style="width: 50%; float: left;" lines="none">
+            <ion-label>Gratuíta</ion-label>
+            <ion-radio slot="start" value="0"></ion-radio>
+          </ion-item>
+          <ion-item style="width: 50%; float: left;" lines="none">
+            <ion-label>De pago</ion-label>
+            <ion-radio slot="start" value="pago"></ion-radio>
+          </ion-item>
+        </ion-radio-group>
+      </ion-col>
+    </ion-row>
+
+
+    <ion-row>
+      <ion-col>
+        <ion-text>
+          <ion-label>Precio</ion-label>
+          <ion-input padding name="price" placeholder="$ 0.00"></ion-input>
+        </ion-text>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-button style="padding-right: 10%; padding-left: 10%;" type="submit" expand="block">Guardar</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

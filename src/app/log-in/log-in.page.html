@@ -1,0 +1,62 @@
+<ion-content [fullscreen]="true" padding>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-thumbnail item-left>
+          <ion-img src="assets/img/logo.jpg"></ion-img>
+        </ion-thumbnail>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <h1>Bienvenid@ de nuevo</h1>
+      </ion-col>
+    </ion-row>
+
+    <ion-row><ion-col><h4>Conéctate para continuar</h4></ion-col></ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-input padding name="email" type="email" placeholder="Correo electrónico" ngModel required></ion-input>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-input padding name="password" type="password" placeholder="Contraseña" ngModel required></ion-input>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <div>
+          <ion-checkbox color="success" checked="true"></ion-checkbox>
+          <ion-text>Recordarme</ion-text>
+        </div>
+      </ion-col>
+      <ion-col>
+        <ion-text><a>Recuperar contraseña</a></ion-text>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-button style="padding-right: 10%; padding-left: 10%;" routerLink="/home" type="submit" expand="block">Entrar</ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-button style="padding-right: 10%; padding-left: 10%;" type="submit" [disabled]="true" expand="block">Continuar sin registrarme</ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="footerBottom">
+      <ion-col>
+          <ion-text>¿No tienes una cuenta? <a  routerLink="/sign-up">Registrate</a></ion-text>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+</ion-content>

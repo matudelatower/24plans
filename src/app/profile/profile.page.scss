@@ -1,0 +1,44 @@
+ion-label{
+    font-weight: bold;
+    color: white;
+}
+
+ion-grid{
+    background-color: #3171e0;
+}
+
+.halfButtonLeft{
+    float: right;
+    margin-right: 0px;
+    background-color: #3171e0;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    padding-left: 10px;
+    border-color: transparent;
+    border-width: 1px;
+    border-style: solid;
+    height: 30px;
+    padding-top: 5px;
+    padding-right: 10px;
+    width: 80%;
+    color: white;
+    font-weight: bold;
+    text-align: right;
+}
+
+.halfButtonRight{
+    float: left;
+    margin-right: 0px;
+    background-color: white;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    padding-left: 10px;
+    border-color: grey;
+    border-width: 1px;
+    border-style: solid;
+    height: 30px;
+    padding-top: 5px;
+    padding-right: 10px;
+    width: 80%;
+    text-align: left;
+}

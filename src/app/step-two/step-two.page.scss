@@ -1,0 +1,33 @@
+ion-content.background{
+    --background: url(../../assets/background/back-1.jpg) 0 0/100% 100% no-repeat;
+    padding-right: 5px;
+}
+
+ion-thumbnail{
+    width: 40%;
+    height: auto;
+}
+
+h1{
+    font-weight: bold;
+    color: white;
+    font-size: 40px;
+}
+
+h4{color: white;}
+
+ion-text{color: white;}
+
+.footerBottom{
+    width: 100%;
+    text-align: center;
+    position:fixed;
+    bottom:30px;
+}
+
+.progressBarr{
+    width: 100%;
+    position: fixed;
+    bottom: 200px;
+    padding-right: 10px;
+}

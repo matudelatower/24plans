@@ -1,0 +1,148 @@
+<ion-content [fullscreen]="true" padding>
+
+
+
+  <div style="width: 100%;">
+    <div class="optionsBar">
+        <button class="optionsBtn" style="top: 5px; left: 5px;" routerLink="/home">
+          <ion-icon class="optionsIcon" name="chevron-back-outline"></ion-icon>
+        </button>
+        <button class="optionsBtn" style="top: 5px; right: 5px;">
+          <ion-icon class="optionsIcon" name="ellipsis-horizontal-outline"></ion-icon>
+        </button>
+    </div>
+    <ion-slides>
+      
+      <ion-slide *ngFor="let item of fotos, let i = index">
+        <ion-thumbnail class="myThumbnail">
+          <ion-img class="myImg" src="assets/lugs/lugar-{{i+1}}.jpg"></ion-img>
+        </ion-thumbnail>
+      </ion-slide>
+
+    </ion-slides>
+    <div class="paginationBar">
+      <button class="paginationBtn"></button>
+      <button class="paginationBtn" style="background-color: gray;"></button>
+      <button class="paginationBtn" style="background-color: grey;"></button>
+    </div>
+  </div>
+
+
+  <ion-grid padding class="detailsEvent">
+
+    <ion-row>
+      <ion-col>
+        <ion-text>
+          <div class="socialBtns">
+            <button class="socialBtn"><ion-icon class="socialIcon" name="heart-outline"></ion-icon></button>
+          </div>
+          <h1>Concierto de la M.O.D.A</h1>
+          <p>Música, conciertos, local</p>
+        </ion-text>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+
+      <ion-col size="3">
+        <ion-avatar>
+          <img src="assets/orgs/persona-1.jpg">
+        </ion-avatar>
+      </ion-col>
+
+      <ion-col  size="6">
+        <ion-text>
+          <P style="font-weight: bold;">Sala Andén 56</P>
+          <p style="font-size: small; text-align: justify;">Sala de conciertos y creación músical el antiguo HANGAR</p>
+        </ion-text>
+      </ion-col>
+
+      <ion-col size="3">
+        <ion-button color="success" style="width: 100%;">Seguir</ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="1">
+        <ion-icon name="calendar-outline"></ion-icon>
+      </ion-col>
+      <ion-col>
+        <ion-label style="font-weight: bold;">Jue, 19 sep, 2019</ion-label>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="1"></ion-col>
+      <ion-col>
+        <ion-label>11:00PM - 1:00AM</ion-label>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="1"></ion-col>
+      <ion-col>
+        <a>Añadir a mi calendario</a>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="1">
+        <ion-icon name="location-outline"></ion-icon>
+      </ion-col>
+      <ion-col>
+        <ion-label style="font-weight: bold;">Sala Andén 56</ion-label>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="1"></ion-col>
+      <ion-col>
+        <ion-label>Calle San Pedro y San Felices, 56, 09001 Burgos</ion-label>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="1"></ion-col>
+      <ion-col>
+        <a>Ver en mapa</a>
+      </ion-col>
+    </ion-row>
+
+    <ion-row padding>
+      <ion-col>
+        <h3 style="font-weight: bold;">Descripción</h3>
+        <ion-text style="text-align: justify;">
+          La Maravillosa Orquesta del Alcohol (M.O.D.A.) ofrecerá cuatro conciertos acústicos en pueblos de Burgos, provincia natal del grupo, para reclamar que la cultura "es un derecho de toda la gente (viva en una gran ciudad… 
+          <a>ver más</a>
+        </ion-text>
+      </ion-col>
+    </ion-row>
+
+    <ion-row padding>
+      <ion-col>
+        <h3 style="font-weight: bold;">Mapa</h3>
+        <!-- Aquí va el mapa -->
+        <div id="map_canvas"></div>
+        <ion-img src="assets/img/mapa-example.jpg"></ion-img>
+      </ion-col>
+    </ion-row>
+
+    <ion-row padding>
+      <ion-col>
+        <ion-text>
+          <h3 style="font-weight: bold;">Información adicional</h3>
+          <p><strong>Teléfono de contacto: </strong>947 000 000</p>
+          <p><strong>Email: </strong>contacto@elanden56.com</p>
+          <p><strong>Web: </strong>www.elanden56.com</p>
+        </ion-text>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-button color="danger" style="padding-right: 10%; padding-left: 10%;" expand="block">Denunciar</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  
+</ion-content>
