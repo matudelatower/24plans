@@ -1,38 +1,29 @@
 <ion-content [fullscreen]="true" padding>
 
-
-
   <div style="width: 100%;">
     <div class="optionsBar">
-        <button class="optionsBtn" style="top: 5px; left: 5px;" routerLink="/home">
-          <ion-icon class="optionsIcon" name="chevron-back-outline"></ion-icon>
-        </button>
-        <button class="optionsBtn" style="top: 5px; right: 5px;">
-          <ion-icon class="optionsIcon" name="ellipsis-horizontal-outline"></ion-icon>
-        </button>
+      <button class="optionsBtn" style="top: 5px; left: 5px;" routerLink="/home">
+        <ion-icon class="optionsIcon" name="chevron-back-outline"></ion-icon>
+      </button>
+      <button class="optionsBtn" style="top: 5px; right: 5px;">
+        <ion-icon class="optionsIcon" name="ellipsis-horizontal-outline"></ion-icon>
+      </button>
     </div>
-    <ion-slides>
-      
-      <ion-slide *ngFor="let item of fotos, let i = index">
-        <ion-thumbnail class="myThumbnail">
-          <ion-img class="myImg" src="assets/lugs/lugar-{{i+1}}.jpg"></ion-img>
-        </ion-thumbnail>
+
+    <ion-slides pager="true" [options]="slideOptsOne" #slideWithNav
+      (ionSlideDidChange)="SlideDidChange(sliderOne,slideWithNav)">
+      <ion-slide  *ngFor="let item of fotos, let i = index">
+        <img src="assets/lugs/lugar-{{i+1}}.jpg">
       </ion-slide>
-
     </ion-slides>
-    <div class="paginationBar">
-      <button class="paginationBtn"></button>
-      <button class="paginationBtn" style="background-color: gray;"></button>
-      <button class="paginationBtn" style="background-color: grey;"></button>
-    </div>
   </div>
-
 
   <ion-grid padding class="detailsEvent">
 
     <ion-row>
       <ion-col>
         <ion-text>
+          
           <div class="socialBtns">
             <button class="socialBtn"><ion-icon class="socialIcon" name="heart-outline"></ion-icon></button>
           </div>
@@ -123,10 +114,13 @@
         <h3 style="font-weight: bold;">Mapa</h3>
         <!-- Aquí va el mapa -->
         <div id="map_canvas"></div>
+        <!-- esta es solamente una imagen ilustrativa de como se vería en la interfaz -->
         <ion-img src="assets/img/mapa-example.jpg"></ion-img>
       </ion-col>
     </ion-row>
 
+    <!-- desconozco la funcionalidad de esta sección de la interfaz, de momento son labels -->
+    <!-- pero, quizás puedan tener la funcionalidad de enlace con apps relacionadas al contenido -->
     <ion-row padding>
       <ion-col>
         <ion-text>
